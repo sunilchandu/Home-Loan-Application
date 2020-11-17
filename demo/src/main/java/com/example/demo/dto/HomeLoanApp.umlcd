@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_dWqKQBNQEeuoNvoC83aFlA">
+  <modelElement href="HomeLoanApp.uml#_zrA9IBNQEeuoNvoC83aFlA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_0k2vMBNQEeuoNvoC83aFlA" source="_0k39UBNQEeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_0ik3QBNQEeuoNvoC83aFlA"/>
+    <stereotypes xmi:id="_0k3WQBNQEeuoNvoC83aFlA" name="Reference">
+      <modelElement href="HomeLoanApp.uml#_0imFYBNQEeuoNvoC83aFlA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_0k3WQRNQEeuoNvoC83aFlA" text=""/>
+    <sourceRole xmi:id="_0k3WQhNQEeuoNvoC83aFlA" aggregationKind="NONE" name="">
+      <modelElement href="HomeLoanApp.uml#_0ik3QRNQEeuoNvoC83aFlA"/>
+      <visibility xmi:id="_0k3WQxNQEeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_0k3WRBNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_0k3WRRNQEeuoNvoC83aFlA" aggregationKind="NONE" name="dateOfBirth" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_0if-wRNQEeuoNvoC83aFlA"/>
+      <visibility xmi:id="_0k3WRhNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k3WRxNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_1BSMgBNQEeuoNvoC83aFlA" source="_1BWd8BNQEeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_0_GbMBNQEeuoNvoC83aFlA"/>
+    <stereotypes xmi:id="_1BUowBNQEeuoNvoC83aFlA" name="Reference">
+      <modelElement href="HomeLoanApp.uml#_0_HCQBNQEeuoNvoC83aFlA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_1BUBsBNQEeuoNvoC83aFlA" text=""/>
+    <sourceRole xmi:id="_1BUBsRNQEeuoNvoC83aFlA" aggregationKind="NONE" name="">
+      <modelElement href="HomeLoanApp.uml#_0_GbMRNQEeuoNvoC83aFlA"/>
+      <visibility xmi:id="_1BVP0RNQEeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_1BVP0BNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_1BUBshNQEeuoNvoC83aFlA" aggregationKind="NONE" name="dueDate" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_0_BisBNQEeuoNvoC83aFlA"/>
+      <visibility xmi:id="_1BVP0xNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BVP0hNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HFNsABNREeuoNvoC83aFlA" sourceAnchor="209.0,0.0" targetAnchor="15.0,213.0" target="_1BWd8BNQEeuoNvoC83aFlA" source="_HFPhMRNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_G9KjQBNREeuoNvoC83aFlA"/>
+    <stereotypes xmi:id="_HFOTExNREeuoNvoC83aFlA" name="Reference">
+      <modelElement href="HomeLoanApp.uml#_G9LKUBNREeuoNvoC83aFlA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_HFOTEBNREeuoNvoC83aFlA" text="">
+      <visualProperties xmi:id="_HHbSgRNREeuoNvoC83aFlA" position="-92.0,-51.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_HFOTERNREeuoNvoC83aFlA" aggregationKind="NONE" name="">
+      <modelElement href="HomeLoanApp.uml#_G9KjQRNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_HHbSgBNREeuoNvoC83aFlA" position="-19.0,-78.66666666666663"/>
+      <visibility xmi:id="_HFO6IRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_HFO6IBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_HFOTEhNREeuoNvoC83aFlA" aggregationKind="NONE" name="emi" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_G9JVIxNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_HHbSghNREeuoNvoC83aFlA" position="2.0,13.666666666666686"/>
+      <visibility xmi:id="_HFO6IxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HFO6IhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HP7uQBNREeuoNvoC83aFlA" sourceAnchor="0.0,253.0" targetAnchor="117.0,297.0" target="_0k39UBNQEeuoNvoC83aFlA" source="_HP_YoBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_HNKuIRNREeuoNvoC83aFlA"/>
+    <bendpoints xmi:id="_1c-0kBNREeuoNvoC83aFlA" sourceX="-414" targetY="220"/>
+    <stereotypes xmi:id="_HP8VVBNREeuoNvoC83aFlA" name="Reference">
+      <modelElement href="HomeLoanApp.uml#_HNKuIxNREeuoNvoC83aFlA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_HP8VURNREeuoNvoC83aFlA" text="">
+      <visualProperties xmi:id="_Hbdo0RNREeuoNvoC83aFlA" position="-48.0,-113.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_HP8VUhNREeuoNvoC83aFlA" aggregationKind="NONE" name="">
+      <modelElement href="HomeLoanApp.uml#_HNKuIhNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_Hbdo0BNREeuoNvoC83aFlA" position="-43.0,-67.0"/>
+      <visibility xmi:id="_HP-KhRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_HP-KhBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_HP8VUxNREeuoNvoC83aFlA" aggregationKind="NONE" name="customer" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_HNF1oBNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_HbeP4BNREeuoNvoC83aFlA" position="-93.0,39.0"/>
+      <visibility xmi:id="_HP-KhxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP-KhhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HP8VUBNREeuoNvoC83aFlA" source="_HP_YoBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_HNKHEBNREeuoNvoC83aFlA"/>
+    <stereotypes xmi:id="_HP-KgxNREeuoNvoC83aFlA" name="Reference">
+      <modelElement href="HomeLoanApp.uml#_HNKuIBNREeuoNvoC83aFlA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_HP-KgBNREeuoNvoC83aFlA" text=""/>
+    <sourceRole xmi:id="_HP-KgRNREeuoNvoC83aFlA" aggregationKind="NONE" name="">
+      <modelElement href="HomeLoanApp.uml#_HNKHERNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_HP-xkRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_HP-xkBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_HP-KghNREeuoNvoC83aFlA" aggregationKind="NONE" name="applicationDate" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_HNFOkRNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_HP-xkxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP-xkhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_foVcgBNREeuoNvoC83aFlA" sourceAnchor="0.0,54.0" targetAnchor="224.0,64.0" target="_z6YO0BNQEeuoNvoC83aFlA" source="_IIMzABNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_foRLEBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_foVcgRNREeuoNvoC83aFlA"/>
+    <nameVisual xmi:id="_foVcghNREeuoNvoC83aFlA" text="">
+      <visualProperties xmi:id="_fsPsIRNREeuoNvoC83aFlA" position="-30.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_foVcgxNREeuoNvoC83aFlA" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_foRLERNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_fsPsIBNREeuoNvoC83aFlA" position="-79.0,2.0"/>
+      <visibility xmi:id="_foVchBNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_foVchRNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_foVchhNREeuoNvoC83aFlA" aggregationKind="NONE" name="admin" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_foTAQBNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_fsPsIhNREeuoNvoC83aFlA" position="23.0,-67.00000000000001"/>
+      <visibility xmi:id="_foVchxNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_foVciBNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_j5z4wBNREeuoNvoC83aFlA" sourceAnchor="0.0,33.0" targetAnchor="190.0,64.0" target="_IIMzABNREeuoNvoC83aFlA" source="_0k39UBNQEeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_j5yDkBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_j5z4wRNREeuoNvoC83aFlA"/>
+    <nameVisual xmi:id="_j5z4whNREeuoNvoC83aFlA" text="">
+      <visualProperties xmi:id="_j9xLsBNREeuoNvoC83aFlA" position="-7.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_j5z4wxNREeuoNvoC83aFlA" aggregationKind="NONE" name="customer" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_j5yDkRNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_j9wkoBNREeuoNvoC83aFlA" position="-28.0,-101.0"/>
+      <visibility xmi:id="_j5z4xBNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_j5z4xRNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_j5z4xhNREeuoNvoC83aFlA" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_j5yqoBNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_j9xLsRNREeuoNvoC83aFlA" position="-28.0,46.0"/>
+      <visibility xmi:id="_j5z4xxNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_j5z4yBNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lSjNUBNREeuoNvoC83aFlA" sourceAnchor="176.0,0.0" targetAnchor="95.0,129.0" target="_IIMzABNREeuoNvoC83aFlA" source="_GvON4BNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_lSgxEBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_lSjNURNREeuoNvoC83aFlA"/>
+    <nameVisual xmi:id="_lSjNUhNREeuoNvoC83aFlA" text="">
+      <visualProperties xmi:id="_lWf5MRNREeuoNvoC83aFlA" position="-13.0,-5.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_lSjNUxNREeuoNvoC83aFlA" aggregationKind="NONE" name="landVerificationOfficer" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_lSgxERNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_lWf5MBNREeuoNvoC83aFlA" position="-232.0,-66.0"/>
+      <visibility xmi:id="_lSjNVBNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_lSjNVRNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_lSjNVhNREeuoNvoC83aFlA" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_lSgxFBNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_lWf5MhNREeuoNvoC83aFlA" position="2.0,16.0"/>
+      <visibility xmi:id="_lSjNVxNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_lSjNWBNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wkCIoBNREeuoNvoC83aFlA" sourceAnchor="244.0,0.0" targetAnchor="0.0,84.0" target="_IIMzABNREeuoNvoC83aFlA" source="_GeqpYBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_wj_FUBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_wkCIoRNREeuoNvoC83aFlA"/>
+    <bendpoints xmi:id="_1c-0kRNREeuoNvoC83aFlA" sourceY="-207" targetX="-121"/>
+    <nameVisual xmi:id="_wkCIohNREeuoNvoC83aFlA" text="">
+      <visualProperties xmi:id="_wn_bkRNREeuoNvoC83aFlA" position="10.0,-28.99999999999997"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wkCIoxNREeuoNvoC83aFlA" aggregationKind="NONE" name="financeVerificationOfficer" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_wj_sYBNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_wn_bkBNREeuoNvoC83aFlA" position="-254.0,-66.00000000000006"/>
+      <visibility xmi:id="_wkCIpBNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_wkCIpRNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wkCIphNREeuoNvoC83aFlA" aggregationKind="NONE" name="user" navigable="true">
+      <modelElement href="HomeLoanApp.uml#_wj_sYxNREeuoNvoC83aFlA"/>
+      <visualProperties xmi:id="_wn_bkhNREeuoNvoC83aFlA" position="-136.0,20.99999999999997"/>
+      <visibility xmi:id="_wkCIpxNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_wkCIqBNREeuoNvoC83aFlA" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1BWd8BNQEeuoNvoC83aFlA" name="EMI" associationsIn="_HFNsABNREeuoNvoC83aFlA" associationsOut="_1BSMgBNQEeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_0-4YwBNQEeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_1BWd8RNQEeuoNvoC83aFlA" position="1089.0,90.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1BWd8hNQEeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_1BWd8xNQEeuoNvoC83aFlA" name="EMIId">
+      <modelElement href="HomeLoanApp.uml#_0-_GcBNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_1BWd9BNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0_A7oBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_1BWd9RNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BWd9hNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_1BWd9xNQEeuoNvoC83aFlA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1BWd-BNQEeuoNvoC83aFlA" name="dueDate">
+      <modelElement href="HomeLoanApp.uml#_0_BisBNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_1BWd-RNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0_CJwBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_1BWd-hNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BWd-xNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_1BWd_BNQEeuoNvoC83aFlA" name="LocalDate">
+        <modelElement href="HomeLoanApp.uml#_0iVmsBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1BWd_RNQEeuoNvoC83aFlA" name="emiAmount">
+      <modelElement href="HomeLoanApp.uml#_0_Cw0BNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_1BWd_hNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0_DX4BNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_1BWd_xNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BWeABNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_1BWeARNQEeuoNvoC83aFlA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1BWeAhNQEeuoNvoC83aFlA" name="loanAmount">
+      <modelElement href="HomeLoanApp.uml#_0_DX4RNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_1BWeAxNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0_D-8BNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_1BWeBBNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BWeBRNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_1BWeBhNQEeuoNvoC83aFlA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1BWeBxNQEeuoNvoC83aFlA" name="interestAmount">
+      <modelElement href="HomeLoanApp.uml#_0_D-8RNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_1BWeCBNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0_EmABNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_1BWeCRNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BWeChNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_1BWeCxNQEeuoNvoC83aFlA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1BWeDBNQEeuoNvoC83aFlA" name="loanAgreementId">
+      <modelElement href="HomeLoanApp.uml#_0_EmARNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_1BWeDRNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0_FNEBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_1BWeDhNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_1BWeDxNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_1BWeEBNQEeuoNvoC83aFlA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_Hkr2QBNREeuoNvoC83aFlA" name="Status">
+    <modelElement href="HomeLoanApp.uml#_HNCyUBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_Hkr2QRNREeuoNvoC83aFlA" position="120.0,489.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_Hkr2QhNREeuoNvoC83aFlA" name="LegacyStyledElement">
+      <modelElement href="HomeLoanApp.uml#_HigsABNREeuoNvoC83aFlA"/>
+    </stereotypes>
+    <visibility xmi:id="_Hkr2QxNREeuoNvoC83aFlA" label="+"/>
+    <literals xmi:id="_Hkr2RBNREeuoNvoC83aFlA" name="PENDING">
+      <modelElement href="HomeLoanApp.uml#_HihTEBNREeuoNvoC83aFlA"/>
+    </literals>
+    <literals xmi:id="_Hkr2RRNREeuoNvoC83aFlA" name="APPROVED">
+      <modelElement href="HomeLoanApp.uml#_HihTERNREeuoNvoC83aFlA"/>
+    </literals>
+    <literals xmi:id="_Hkr2RhNREeuoNvoC83aFlA" name="WAITING_FOR_FINANCE_APPROVAL">
+      <modelElement href="HomeLoanApp.uml#_HihTEhNREeuoNvoC83aFlA"/>
+    </literals>
+    <literals xmi:id="_Hkr2RxNREeuoNvoC83aFlA" name="WAITING_FOR_LAND_VERIFICATION_OFFICE_APPROVAL">
+      <modelElement href="HomeLoanApp.uml#_HihTExNREeuoNvoC83aFlA"/>
+    </literals>
+    <literals xmi:id="_Hkr2SBNREeuoNvoC83aFlA" name="REJECTED">
+      <modelElement href="HomeLoanApp.uml#_Hih6IBNREeuoNvoC83aFlA"/>
+    </literals>
+    <literals xmi:id="_Hkr2SRNREeuoNvoC83aFlA" name="DOCUMENTS_NOT_UPLOADED">
+      <modelElement href="HomeLoanApp.uml#_Hih6IRNREeuoNvoC83aFlA"/>
+    </literals>
+    <literals xmi:id="_Hkr2ShNREeuoNvoC83aFlA" name="DOCUMENTS_UPLOADED">
+      <modelElement href="HomeLoanApp.uml#_Hih6IhNREeuoNvoC83aFlA"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HP_YoBNREeuoNvoC83aFlA" name="LoanApplication" associationsOut="_HP7uQBNREeuoNvoC83aFlA _HP8VUBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_HM5BUBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_HP_YoRNREeuoNvoC83aFlA" position="1262.0,360.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HP_YohNREeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_HP_YoxNREeuoNvoC83aFlA" name="applicationId">
+      <modelElement href="HomeLoanApp.uml#_HNEngBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YpBNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNFOkBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YpRNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YphNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YpxNREeuoNvoC83aFlA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YqBNREeuoNvoC83aFlA" name="applicationDate">
+      <modelElement href="HomeLoanApp.uml#_HNFOkRNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YqRNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNFOkhNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YqhNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YqxNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YrBNREeuoNvoC83aFlA" name="LocalDate">
+        <modelElement href="HomeLoanApp.uml#_0iVmsBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YrRNREeuoNvoC83aFlA" name="customer">
+      <modelElement href="HomeLoanApp.uml#_HNF1oBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YrhNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNF1oRNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YrxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YsBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YsRNREeuoNvoC83aFlA" name="Customer">
+        <modelElement href="HomeLoanApp.uml#_0iIyYBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YshNREeuoNvoC83aFlA" name="loanAppliedAmount">
+      <modelElement href="HomeLoanApp.uml#_HNF1ohNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YsxNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNGcsBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YtBNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YtRNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YthNREeuoNvoC83aFlA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YtxNREeuoNvoC83aFlA" name="loanApprovedAmount">
+      <modelElement href="HomeLoanApp.uml#_HNGcsRNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YuBNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNGcshNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YuRNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YuhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YuxNREeuoNvoC83aFlA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YvBNREeuoNvoC83aFlA" name="landVerificationApproval">
+      <modelElement href="HomeLoanApp.uml#_HNHDwBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YvRNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNHDwRNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YvhNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YvxNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YwBNREeuoNvoC83aFlA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YwRNREeuoNvoC83aFlA" name="financeVerificationApproval">
+      <modelElement href="HomeLoanApp.uml#_HNHq0BNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YwhNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNHq0RNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YwxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YxBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YxRNREeuoNvoC83aFlA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YxhNREeuoNvoC83aFlA" name="adminApproval">
+      <modelElement href="HomeLoanApp.uml#_HNHq0hNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YxxNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNIR4BNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YyBNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YyRNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YyhNREeuoNvoC83aFlA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HP_YyxNREeuoNvoC83aFlA" name="status">
+      <modelElement href="HomeLoanApp.uml#_HNIR4RNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HP_YzBNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_HNI48BNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HP_YzRNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HP_YzhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HP_YzxNREeuoNvoC83aFlA" name="Status">
+        <modelElement href="HomeLoanApp.uml#_HNCyUBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_z6YO0BNQEeuoNvoC83aFlA" name="Admin" associationsIn="_foVcgBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_zrFOkBNQEeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_z6YO0RNQEeuoNvoC83aFlA" position="156.0,55.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_z6YO0hNQEeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_z6YO0xNQEeuoNvoC83aFlA" name="userId">
+      <modelElement href="HomeLoanApp.uml#_zrW7YBNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_z6YO1BNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_zrZ-sBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_z6YO1RNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_z6YO1hNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_z6YO1xNQEeuoNvoC83aFlA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_z6YO2BNQEeuoNvoC83aFlA" name="adminName">
+      <modelElement href="HomeLoanApp.uml#_zrbz4BNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_z6YO2RNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_zrdCABNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_z6YO2hNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_z6YO2xNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_z6YO3BNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_z6Y14BNQEeuoNvoC83aFlA" name="adminContact">
+      <modelElement href="HomeLoanApp.uml#_zrdCARNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_z6Y14RNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_zrdpEBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_z6Y14hNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_z6Y14xNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_z6Y15BNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_foWqoBNREeuoNvoC83aFlA" name="user">
+      <modelElement href="HomeLoanApp.uml#_foRLERNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_foWqoRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_foWqohNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_foWqoxNREeuoNvoC83aFlA" name="User">
+        <modelElement href="HomeLoanApp.uml#_IE9RwBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_IIMzABNREeuoNvoC83aFlA" name="User" associationsIn="_j5z4wBNREeuoNvoC83aFlA _lSjNUBNREeuoNvoC83aFlA _wkCIoBNREeuoNvoC83aFlA" associationsOut="_foVcgBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_IE9RwBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_IIMzARNREeuoNvoC83aFlA" position="516.0,65.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_IIMzAhNREeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_IIMzAxNREeuoNvoC83aFlA" name="userId">
+      <modelElement href="HomeLoanApp.uml#_IE_uABNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_IIMzBBNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_IFAVEBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_IIMzBRNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_IIMzBhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_IIMzBxNREeuoNvoC83aFlA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IIMzCBNREeuoNvoC83aFlA" name="password">
+      <modelElement href="HomeLoanApp.uml#_IFA8IBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_IIMzCRNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_IFA8IRNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_IIMzChNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_IIMzCxNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_IIMzDBNREeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_IIMzDRNREeuoNvoC83aFlA" name="role">
+      <modelElement href="HomeLoanApp.uml#_IFBjMBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_IIMzDhNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_IFCKQBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_IIMzDxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_IIMzEBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_IIMzERNREeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_foXRsBNREeuoNvoC83aFlA" name="admin">
+      <modelElement href="HomeLoanApp.uml#_foTAQBNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_foXRsRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_foXRshNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_foXRsxNREeuoNvoC83aFlA" name="Admin">
+        <modelElement href="HomeLoanApp.uml#_zrFOkBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_j50f0BNREeuoNvoC83aFlA" name="customer">
+      <modelElement href="HomeLoanApp.uml#_j5yDkRNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_j50f0RNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_j50f0hNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_j50f0xNREeuoNvoC83aFlA" name="Customer">
+        <modelElement href="HomeLoanApp.uml#_0iIyYBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_lSjNWRNREeuoNvoC83aFlA" name="landVerificationOfficer">
+      <modelElement href="HomeLoanApp.uml#_lSgxERNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_lSjNWhNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_lSjNWxNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_lSjNXBNREeuoNvoC83aFlA" name="LandVerificationOfficer">
+        <modelElement href="HomeLoanApp.uml#_GtcFMBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wkCvsBNREeuoNvoC83aFlA" name="financeVerificationOfficer">
+      <modelElement href="HomeLoanApp.uml#_wj_sYBNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_wkCvsRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_wkCvshNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_wkCvsxNREeuoNvoC83aFlA" name="FinanceVerificationOfficer">
+        <modelElement href="HomeLoanApp.uml#_GcNyUBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_0k39UBNQEeuoNvoC83aFlA" name="Customer" associationsIn="_HP7uQBNREeuoNvoC83aFlA" associationsOut="_0k2vMBNQEeuoNvoC83aFlA _j5z4wBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_0iIyYBNQEeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_0k39URNQEeuoNvoC83aFlA" position="731.0,96.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_0k39UhNQEeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_0k39UxNQEeuoNvoC83aFlA" name="userId">
+      <modelElement href="HomeLoanApp.uml#_0ic7cBNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39VBNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0idigBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39VRNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39VhNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39VxNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39WBNQEeuoNvoC83aFlA" name="customerName">
+      <modelElement href="HomeLoanApp.uml#_0idigRNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39WRNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0ieJkBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39WhNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39WxNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39XBNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39XRNQEeuoNvoC83aFlA" name="mobileNumber">
+      <modelElement href="HomeLoanApp.uml#_0ieJkRNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39XhNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0iewoBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39XxNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39YBNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39YRNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39YhNQEeuoNvoC83aFlA" name="emailId">
+      <modelElement href="HomeLoanApp.uml#_0ifXsBNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39YxNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0if-wBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39ZBNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39ZRNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39ZhNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39ZxNQEeuoNvoC83aFlA" name="dateOfBirth">
+      <modelElement href="HomeLoanApp.uml#_0if-wRNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39aBNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0igl0BNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39aRNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39ahNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39axNQEeuoNvoC83aFlA" name="LocalDate">
+        <modelElement href="HomeLoanApp.uml#_0iVmsBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39bBNQEeuoNvoC83aFlA" name="gender">
+      <modelElement href="HomeLoanApp.uml#_0igl0RNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39bRNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0ihM4BNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39bhNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39bxNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39cBNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39cRNQEeuoNvoC83aFlA" name="nationality">
+      <modelElement href="HomeLoanApp.uml#_0ihM4RNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39chNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0ihz8BNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39cxNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39dBNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39dRNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39dhNQEeuoNvoC83aFlA" name="aadharNumber">
+      <modelElement href="HomeLoanApp.uml#_0ihz8RNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39dxNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0iibABNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39eBNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39eRNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39ehNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_0k39exNQEeuoNvoC83aFlA" name="panNumber">
+      <modelElement href="HomeLoanApp.uml#_0iibARNQEeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_0k39fBNQEeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_0ijCEBNQEeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_0k39fRNQEeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_0k39fhNQEeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_0k39fxNQEeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_j50f1BNREeuoNvoC83aFlA" name="user">
+      <modelElement href="HomeLoanApp.uml#_j5yqoBNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_j50f1RNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_j50f1hNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_j50f1xNREeuoNvoC83aFlA" name="User">
+        <modelElement href="HomeLoanApp.uml#_IE9RwBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_GvON4BNREeuoNvoC83aFlA" name="LandVerificationOfficer" associationsOut="_lSjNUBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_GtcFMBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_GvON4RNREeuoNvoC83aFlA" position="435.0,308.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_GvON4hNREeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_GvON4xNREeuoNvoC83aFlA" name="userId">
+      <modelElement href="HomeLoanApp.uml#_GtcsQBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_GvON5BNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_GtdTUBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_GvON5RNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_GvON5hNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_GvON5xNREeuoNvoC83aFlA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GvON6BNREeuoNvoC83aFlA" name="officerName">
+      <modelElement href="HomeLoanApp.uml#_GtdTURNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_GvON6RNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_GtdTUhNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_GvON6hNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_GvON6xNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_GvON7BNREeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GvON7RNREeuoNvoC83aFlA" name="officerContact">
+      <modelElement href="HomeLoanApp.uml#_Gtd6YBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_GvON7hNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_Gtd6YRNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_GvON7xNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_GvON8BNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_GvON8RNREeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_lSkbcBNREeuoNvoC83aFlA" name="user">
+      <modelElement href="HomeLoanApp.uml#_lSgxFBNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_lSkbcRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_lSkbchNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_lSkbcxNREeuoNvoC83aFlA" name="User">
+        <modelElement href="HomeLoanApp.uml#_IE9RwBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_GeqpYBNREeuoNvoC83aFlA" name="FinanceVerificationOfficer" associationsOut="_wkCIoBNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_GcNyUBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_GeqpYRNREeuoNvoC83aFlA" position="151.0,356.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_GeqpYhNREeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_GeqpYxNREeuoNvoC83aFlA" name="userId">
+      <modelElement href="HomeLoanApp.uml#_GcPngBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_GeqpZBNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_GcQOkBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_GeqpZRNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_GeqpZhNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_GeqpZxNREeuoNvoC83aFlA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GeqpaBNREeuoNvoC83aFlA" name="finOfficerName">
+      <modelElement href="HomeLoanApp.uml#_GcQOkRNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_GeqpaRNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_GcQ1oBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_GeqpahNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_GeqpaxNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_GeqpbBNREeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GeqpbRNREeuoNvoC83aFlA" name="finOfficerContact">
+      <modelElement href="HomeLoanApp.uml#_GcQ1oRNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_GeqpbhNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_GcRcsBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_GeqpbxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_GeqpcBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_GeqpcRNREeuoNvoC83aFlA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wkDWwBNREeuoNvoC83aFlA" name="user">
+      <modelElement href="HomeLoanApp.uml#_wj_sYxNREeuoNvoC83aFlA"/>
+      <visibility xmi:id="_wkDWwRNREeuoNvoC83aFlA" label="+"/>
+      <cardinality xmi:id="_wkDWwhNREeuoNvoC83aFlA" label="*" max="-1"/>
+      <type xmi:id="_wkDWwxNREeuoNvoC83aFlA" name="User">
+        <modelElement href="HomeLoanApp.uml#_IE9RwBNREeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HFPhMRNREeuoNvoC83aFlA" name="LoanAgreement" associationsOut="_HFNsABNREeuoNvoC83aFlA">
+    <modelElement href="HomeLoanApp.uml#_G9FDsBNREeuoNvoC83aFlA"/>
+    <visualProperties xmi:id="_HFPhMhNREeuoNvoC83aFlA" position="895.0,408.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HFPhMxNREeuoNvoC83aFlA" label="+"/>
+    <attributes xmi:id="_HFPhNBNREeuoNvoC83aFlA" name="loanAgreementId">
+      <modelElement href="HomeLoanApp.uml#_G9IuEBNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HFPhNRNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_G9JVIBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HFPhNhNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HFPhNxNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HFPhOBNREeuoNvoC83aFlA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HFPhORNREeuoNvoC83aFlA" name="loanApplicationId">
+      <modelElement href="HomeLoanApp.uml#_G9JVIRNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HFPhOhNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_G9JVIhNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HFPhOxNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HFPhPBNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HFPhPRNREeuoNvoC83aFlA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HFPhPhNREeuoNvoC83aFlA" name="emi">
+      <modelElement href="HomeLoanApp.uml#_G9JVIxNREeuoNvoC83aFlA"/>
+      <stereotypes xmi:id="_HFPhPxNREeuoNvoC83aFlA" name="LegacyStyledElement">
+        <modelElement href="HomeLoanApp.uml#_G9J8MBNREeuoNvoC83aFlA"/>
+      </stereotypes>
+      <visibility xmi:id="_HFPhQBNREeuoNvoC83aFlA" label="-"/>
+      <cardinality xmi:id="_HFPhQRNREeuoNvoC83aFlA" label="1" max="1" min="1"/>
+      <type xmi:id="_HFPhQhNREeuoNvoC83aFlA" name="EMI">
+        <modelElement href="HomeLoanApp.uml#_0-4YwBNQEeuoNvoC83aFlA"/>
+      </type>
+    </attributes>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
