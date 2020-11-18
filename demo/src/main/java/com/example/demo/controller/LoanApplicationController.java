@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.service.ILoanApplicationService;
+import com.example.demo.dto.LoanApplicationDto;
 import com.example.demo.entities.LoanApplication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,62 +19,62 @@ public class LoanApplicationController {
     ILoanApplicationService service;
 
    @GetMapping
-  public ResponseEntity<List<LoanApplication>> getAllApplications() {
+  public ResponseEntity<List<LoanApplicationDto>> getAllApplications() {
 	   
-	   List<LoanApplication> loanApplications= service.retrieveAllLoanApplication();
+	   List<LoanApplicationDto> loanApplications= service.retrieveAllLoanApplication();
 	   
 	   if(loanApplications.isEmpty() || loanApplications==null) {
 			return new ResponseEntity("Sorry! ProductsId not available!", 
 					HttpStatus.NOT_FOUND);
 		}
 		
-	   return new ResponseEntity<List<LoanApplication>>(loanApplications, HttpStatus.OK);	   
+	   return new ResponseEntity<List<LoanApplicationDto>>(loanApplications, HttpStatus.OK);	   
    }
    
    
    
    @GetMapping("{loan-application-id}")
-	public ResponseEntity<LoanApplication> getById(
+	public ResponseEntity<LoanApplicationDto> getById(
 			@PathVariable("loan-application-id")Integer loanApplicationId){
-		LoanApplication loanApplication= service.retrieveLoanApplicationById(loanApplicationId);
+	   LoanApplicationDto loanApplication= service.retrieveLoanApplicationById(loanApplicationId);
    
 		if( loanApplication==null) {
 			return new ResponseEntity("Sorry! ProductsId not available!", 
 					HttpStatus.NOT_FOUND);
 		}
 		
-		return new ResponseEntity<LoanApplication>(loanApplication, HttpStatus.OK);
+		return new ResponseEntity<LoanApplicationDto>(loanApplication, HttpStatus.OK);
 	}
    
    @PostMapping
-   public LoanApplication addNewCustomer(@RequestBody LoanApplication loanApplication) {
+   public LoanApplicationDto addLoanApplication(@RequestBody LoanApplicationDto loanApplicationDto) {
      
-       return service.addLoanApplication(loanApplication);
+       return service.addLoanApplication(loanApplicationDto);
    }
    
    @PutMapping
-	public ResponseEntity<List<LoanApplication>> updateLoanApplication(
-			@RequestBody LoanApplication loanApplication){
-		List<LoanApplication> loanApplications= service.updateLoanApplication(loanApplication);
+	public ResponseEntity<List<LoanApplicationDto>> updateLoanApplication(
+			@RequestBody LoanApplicationDto loanApplicationDto){
+		List<LoanApplicationDto> loanApplications= service.updateLoanApplication(loanApplicationDto);
 		if(loanApplications.isEmpty())
 		{
 			return new ResponseEntity("Sorry! Products not available!", 
 					HttpStatus.NOT_FOUND);
 		}
 		
-		return new ResponseEntity<List<LoanApplication>>(loanApplications, HttpStatus.OK);
+		return new ResponseEntity<List<LoanApplicationDto>>(loanApplications, HttpStatus.OK);
 	}
    
    @DeleteMapping("{loan-application-id}")
-	public ResponseEntity<List<LoanApplication>> deleteLoanApplication(
+	public ResponseEntity<List<LoanApplicationDto>> deleteLoanApplication(
 			@PathVariable("loan-application-id")Integer loanApplicationId){
-		List<LoanApplication> loanApplications= service.deleteLoanApplication(loanApplicationId);
+		List<LoanApplicationDto> loanApplications= service.deleteLoanApplication(loanApplicationId);
 		if(loanApplications.isEmpty() || loanApplications==null) {
 			return new ResponseEntity("Sorry! ProductsId not available!", 
 					HttpStatus.NOT_FOUND);
 		}
 		
-		return new ResponseEntity<List<LoanApplication>>(loanApplications, HttpStatus.OK);
+		return new ResponseEntity<List<LoanApplicationDto>>(loanApplications, HttpStatus.OK);
 	}
    
 

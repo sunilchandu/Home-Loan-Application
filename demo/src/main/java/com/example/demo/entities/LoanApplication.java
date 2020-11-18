@@ -1,7 +1,19 @@
 package com.example.demo.entities;
 
-import javax.persistence.*;
 import java.time.LocalDate;
+import com.example.demo.entities.Status;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity(name = "loan_application")
 @Table(name = "loan_application")
@@ -70,13 +82,14 @@ public class LoanApplication {
 	}
 	
 	
-    public Status getStatus() {
-		return status;
-	}
+   
 
-	public void setStatus(Status status) {
-		this.status = status;
+	public void setStatus(Status status2) {
+		this.status = status2;
 	}
+	 public Status getStatus() {
+			return status;
+		}
 
 	public LoanApplication() {
     	super();

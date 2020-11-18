@@ -8,6 +8,7 @@ import com.example.demo.entities.CustomerEntity;
 import com.example.demo.entities.LoanApplication;
 import com.example.demo.repository.LoanApplicationRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,56 +20,97 @@ public class LoanApplicationService implements ILoanApplicationService {
 	@Autowired
     private LoanApplicationRepository loanApplicationRepository;
 
-    public LoanApplication addLoanApplication(LoanApplication loanApplication){
-        return loanApplicationRepository.save(loanApplication);
+    public LoanApplicationDto addLoanApplication(LoanApplicationDto loanApplicationDto){
+    	
+    	LoanApplication loanApplication= ConvertDTOToEntity(loanApplicationDto);
+    	
+    	
+    	
+    	
+    	
+        return ConvertEntityToDto(loanApplicationRepository.save(loanApplication));
     }
     
-    public List<LoanApplication> retrieveAllLoanApplication() {
-        return loanApplicationRepository.findAll();
+    public List<LoanApplicationDto> retrieveAllLoanApplication() {
+    	List<LoanApplicationDto> applicationDtoList = new ArrayList<LoanApplicationDto>();
+    	List<LoanApplication> applicationList = loanApplicationRepository.findAll();
+    	
+    	for(LoanApplication loan: applicationList) {
+    		applicationDtoList.add(ConvertEntityToDto(loan));
+    	}
+
+    	
+        return applicationDtoList;
     }
     
-    public List<LoanApplication> deleteLoanApplication(Integer loanApplicationId) {
+//    public List<Customer> viewAllCustomers() {
+//		log.info("starting of the view all customers method");
+//		List<Customer> custList = new ArrayList<Customer>();
+//		List<CustomerEntity> custEntity = customerRepository.findAll();
+//		for (CustomerEntity Cust : custEntity) {
+//			custList.add(ConvertEntityToDTO(Cust));
+//		}
+//		log.info("end of the view all customers method");
+//		return custList;
+//		// return customerRepository.findAll();
+//	}
+//    
+    public List<LoanApplicationDto> deleteLoanApplication(Integer loanApplicationId) {
+    	
     	
     	loanApplicationRepository.deleteById(loanApplicationId);
+
     	
     	
     	
-        return loanApplicationRepository.findAll();
+        return retrieveAllLoanApplication();
     }
     
-    public List<LoanApplication> updateLoanApplication(LoanApplication loanApplication) {
+    public List<LoanApplicationDto> updateLoanApplication(LoanApplicationDto loanApplicationDto) {
     
-    	loanApplicationRepository.save(loanApplication);
+    	ConvertEntityToDto(loanApplicationRepository.save(ConvertDTOToEntity(loanApplicationDto)));
 		// TODO Auto-generated method stub
-		return loanApplicationRepository.findAll();
+		return retrieveAllLoanApplication();
 	}
     
-	public LoanApplication retrieveLoanApplicationById(Integer loanApplicationId) {
+	public LoanApplicationDto retrieveLoanApplicationById(Integer loanApplicationId) {
 		
 		Optional<LoanApplication> loanApplication= loanApplicationRepository.findById(loanApplicationId);
 		
-		return loanApplication.get();
+		return ConvertEntityToDto(loanApplication.get());
 	}
-	public CustomerEntity ConvertDTOToEntity(LoanApplicationDto loanApplicationDto) {
-		CustomerEntity custEntity = new CustomerEntity();
-		LoanApplication loanApplication= new LoanApplication();
+	public LoanApplication ConvertDTOToEntity(LoanApplicationDto loanApplicationDto) {
+		LoanApplication loanApplication = new LoanApplication();
 		loanApplication.setId(loanApplicationDto.getApplicationId());
-		loanApplication.
-		return custEntity;
+		loanApplication.setAdminApproval(loanApplicationDto.getAdminApproval());
+	    loanApplication.setDateOfApplication(loanApplicationDto.getApplicationDate());
+	    loanApplication.setFinanceVerificationApproval(loanApplicationDto.getFinanceVerificationApproval());
+	    loanApplication.setLandVerificationApproval(loanApplicationDto.getLandVerificationApproval());
+	    loanApplication.setCustomer(loanApplicationDto.getCustomer());
+	    loanApplication.setLoanAppliedAmount(loanApplicationDto.getLoanAppliedAmount());
+	    loanApplication.setLoanApprovedAmount(loanApplicationDto.getLoanApprovedAmount());
+	   
+         return loanApplication;
+		
+		
 	}
-//	public CustomerEntity ConvertDTOToEntity(Customer cust) {
-//		CustomerEntity custEntity = new CustomerEntity();
-//		custEntity.setUserId(cust.getUserId());
-//		custEntity.setCustomerName(cust.getCustomerName());
-//		custEntity.setAadharNumber(cust.getAadharNumber());
-//		custEntity.setDateOfBirth(cust.getDateOfBirth());
-//		custEntity.setEmailId(cust.getEmailId());
-//		custEntity.setGender(cust.getGender());
-//		custEntity.setMobileNumber(cust.getMobileNumber());
-//		custEntity.setNationality(cust.getNationality());
-//		custEntity.setPanNumber(cust.getPanNumber());
-//		return custEntity;
-//	}
+	public LoanApplicationDto ConvertEntityToDto(LoanApplication loanApplication) {
+		LoanApplicationDto loanApplicationDto = new LoanApplicationDto();
+		loanApplicationDto.setApplicationId(loanApplication.getId());
+		loanApplicationDto.setAdminApproval(loanApplication.getAdminApproval());
+	    loanApplicationDto.setApplicationDate(loanApplication.getDateOfApplication());
+	    loanApplicationDto.setFinanceVerificationApproval(loanApplication.getFinanceVerificationApproval());
+	    loanApplicationDto.setLandVerificationApproval(loanApplication.getLandVerificationApproval());
+	    loanApplicationDto.setCustomer(loanApplication.getCustomer());
+	    loanApplicationDto.setLoanAppliedAmount(loanApplication.getLoanAppliedAmount());
+	    loanApplicationDto.setLoanApprovedAmount(loanApplication.getLoanApprovedAmount());
+	   
+         return loanApplicationDto;
+		
+		
+	}
+	
+
 
     
     

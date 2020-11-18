@@ -1,12 +1,14 @@
 package com.example.demo.dto;
-
+import com.example.demo.dto.Status;
 import java.time.LocalDate;
+
+import com.example.demo.entities.CustomerEntity;
 
 public class LoanApplicationDto{
 	
 	private int applicationId;
 	private LocalDate applicationDate;
-	private Customer customer;
+	private CustomerEntity customer;
 	private double loanAppliedAmount;
 	private double loanApprovedAmount;
 	private String landVerificationApproval;
@@ -30,11 +32,11 @@ public class LoanApplicationDto{
 		this.applicationDate = applicationDate;
 	}
 
-	public Customer getCustomer() {
+	public CustomerEntity getCustomer() {
 		return customer;
 	}
 
-	public void setCustomer(Customer customer) {
+	public void setCustomer(CustomerEntity customer) {
 		this.customer = customer;
 	}
 
@@ -54,7 +56,7 @@ public class LoanApplicationDto{
 		this.loanApprovedAmount = loanApprovedAmount;
 	}
 
-	public String isLandVerificationApproval() {
+	public String getLandVerificationApproval() {
 		return landVerificationApproval;
 	}
 
@@ -62,7 +64,7 @@ public class LoanApplicationDto{
 		this.landVerificationApproval = landVerificationApproval;
 	}
 
-	public String isFinanceVerificationApproval() {
+	public String getFinanceVerificationApproval() {
 		return financeVerificationApproval;
 	}
 
@@ -70,7 +72,7 @@ public class LoanApplicationDto{
 		this.financeVerificationApproval = financeVerificationApproval;
 	}
 
-	public String isAdminApproval() {
+	public String getAdminApproval() {
 		return adminApproval;
 	}
 
@@ -86,7 +88,7 @@ public class LoanApplicationDto{
 		this.status = status;
 	}
 
-	public LoanApplicationDto( int applicationId,LocalDate applicationDate, Customer customer, double loanAppliedAmount,
+	public LoanApplicationDto( int applicationId,LocalDate applicationDate, CustomerEntity customer, double loanAppliedAmount,
 			double loanApprovedAmount, String landVerificationApproval, String financeVerificationApproval,
 			String adminApproval, Status status) {
 		super();

@@ -2,17 +2,18 @@ package com.example.demo.service;
 
 import java.util.List;
 
+import com.example.demo.dto.LoanApplicationDto;
 import com.example.demo.entities.LoanApplication;
 
 public interface ILoanApplicationService {
 
-	public LoanApplication addLoanApplication(LoanApplication loanApplication);
+	public LoanApplicationDto addLoanApplication(LoanApplicationDto loanApplication);
 
-	public List<LoanApplication> retrieveAllLoanApplication();
+	public List<LoanApplicationDto> retrieveAllLoanApplication();
 
-	public LoanApplication retrieveLoanApplicationById(Integer loanApplicationId);
-	public List<LoanApplication> deleteLoanApplication(Integer loanApplicationId);
+	public LoanApplicationDto retrieveLoanApplicationById(Integer loanApplicationId);
+	public List<LoanApplicationDto> deleteLoanApplication(Integer loanApplicationId);
 
-	public List<LoanApplication> updateLoanApplication(LoanApplication loanApplication);
+	public List<LoanApplicationDto> updateLoanApplication(LoanApplicationDto loanApplicationDto);
 
 }
