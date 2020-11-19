@@ -113,6 +113,7 @@ public class LoanApplication {
 		this.landVerificationApproval = landVerificationApproval;
 		this.financeVerificationApproval = financeVerificationApproval;
 		this.adminApproval = adminApproval;
+	
 		this.customer = customer;
 	}
 

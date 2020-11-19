@@ -2,6 +2,9 @@ package com.example.demo.dto;
 import com.example.demo.dto.Status;
 import java.time.LocalDate;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
 import com.example.demo.entities.CustomerEntity;
 
 public class LoanApplicationDto{
@@ -14,6 +17,7 @@ public class LoanApplicationDto{
 	private String landVerificationApproval;
 	private String financeVerificationApproval;
 	private String adminApproval;
+	@Enumerated(EnumType.STRING)
 	private Status status;
 
 	public int getApplicationId() {
@@ -88,9 +92,9 @@ public class LoanApplicationDto{
 		this.status = status;
 	}
 
-	public LoanApplicationDto( int applicationId,LocalDate applicationDate, CustomerEntity customer, double loanAppliedAmount,
+	public LoanApplicationDto( int applicationId,LocalDate applicationDate,  double loanAppliedAmount,
 			double loanApprovedAmount, String landVerificationApproval, String financeVerificationApproval,
-			String adminApproval, Status status) {
+			String adminApproval, CustomerEntity customer) {
 		super();
 		this.applicationId = applicationId;
 		this.applicationDate = applicationDate;
@@ -100,7 +104,7 @@ public class LoanApplicationDto{
 		this.landVerificationApproval = landVerificationApproval;
 		this.financeVerificationApproval = financeVerificationApproval;
 		this.adminApproval = adminApproval;
-		this.status = status;
+		
 	}
 
 	@Override

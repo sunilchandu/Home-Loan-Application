@@ -3,6 +3,9 @@ package com.example.demo.controller;
 import com.example.demo.service.ILoanApplicationService;
 import com.example.demo.dto.LoanApplicationDto;
 import com.example.demo.entities.LoanApplication;
+import com.example.demo.exception.ApplicationAlreadyExists;
+import com.example.demo.exception.ApplicationIdNotFound;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,8 +37,8 @@ public class LoanApplicationController {
    
    
    @GetMapping("{loan-application-id}")
-	public ResponseEntity<LoanApplicationDto> getById(
-			@PathVariable("loan-application-id")Integer loanApplicationId){
+	public ResponseEntity<LoanApplicationDto> getById (
+			@PathVariable("loan-application-id")Integer loanApplicationId) throws ApplicationIdNotFound{
 	   LoanApplicationDto loanApplication= service.retrieveLoanApplicationById(loanApplicationId);
    
 		if( loanApplication==null) {
@@ -47,14 +50,14 @@ public class LoanApplicationController {
 	}
    
    @PostMapping
-   public LoanApplicationDto addLoanApplication(@RequestBody LoanApplicationDto loanApplicationDto) {
+   public LoanApplicationDto addLoanApplication(@RequestBody LoanApplicationDto loanApplicationDto) throws ApplicationAlreadyExists{
      
        return service.addLoanApplication(loanApplicationDto);
    }
    
    @PutMapping
 	public ResponseEntity<List<LoanApplicationDto>> updateLoanApplication(
-			@RequestBody LoanApplicationDto loanApplicationDto){
+			@RequestBody LoanApplicationDto loanApplicationDto) throws ApplicationIdNotFound{
 		List<LoanApplicationDto> loanApplications= service.updateLoanApplication(loanApplicationDto);
 		if(loanApplications.isEmpty())
 		{
@@ -67,7 +70,7 @@ public class LoanApplicationController {
    
    @DeleteMapping("{loan-application-id}")
 	public ResponseEntity<List<LoanApplicationDto>> deleteLoanApplication(
-			@PathVariable("loan-application-id")Integer loanApplicationId){
+			@PathVariable("loan-application-id")Integer loanApplicationId) throws ApplicationIdNotFound {
 		List<LoanApplicationDto> loanApplications= service.deleteLoanApplication(loanApplicationId);
 		if(loanApplications.isEmpty() || loanApplications==null) {
 			return new ResponseEntity("Sorry! ProductsId not available!", 
