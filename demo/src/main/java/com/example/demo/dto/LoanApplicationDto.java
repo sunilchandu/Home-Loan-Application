@@ -5,17 +5,27 @@ import java.time.LocalDate;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
+import javax.validation.constraints.FutureOrPresent;
+import javax.validation.constraints.NotNull;
+
 import com.example.demo.entities.CustomerEntity;
 
 public class LoanApplicationDto{
 	
 	private int applicationId;
+	@FutureOrPresent
+	@NotNull
 	private LocalDate applicationDate;
 	private CustomerEntity customer;
+	@NotNull
 	private double loanAppliedAmount;
+	@NotNull
 	private double loanApprovedAmount;
+	@NotNull
 	private String landVerificationApproval;
+	@NotNull
 	private String financeVerificationApproval;
+	@NotNull
 	private String adminApproval;
 	@Enumerated(EnumType.STRING)
 	private Status status;
@@ -94,7 +104,7 @@ public class LoanApplicationDto{
 
 	public LoanApplicationDto( int applicationId,LocalDate applicationDate,  double loanAppliedAmount,
 			double loanApprovedAmount, String landVerificationApproval, String financeVerificationApproval,
-			String adminApproval, CustomerEntity customer) {
+			String adminApproval, CustomerEntity customer, Status status) {
 		super();
 		this.applicationId = applicationId;
 		this.applicationDate = applicationDate;
@@ -104,16 +114,18 @@ public class LoanApplicationDto{
 		this.landVerificationApproval = landVerificationApproval;
 		this.financeVerificationApproval = financeVerificationApproval;
 		this.adminApproval = adminApproval;
+		this.status=status;
 		
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "LoanApplication [applicationId=" + applicationId + ", applicationDate=" + applicationDate
-				+ ", customer=" + customer + ", loanAppliedAmount=" + loanAppliedAmount + ", loanApprovedAmount="
-				+ loanApprovedAmount + ", landVerificationApproval=" + landVerificationApproval
-				+ ", financeVerificationApproval=" + financeVerificationApproval + ", adminApproval=" + adminApproval
-				+ ", status=" + status + "]";
+		return "LoanApplication [id=" + applicationId + ", dateOfApplication=" + applicationDate
+				+ ", loanAppliedAmount=" + loanAppliedAmount + ", loanApprovedAmount=" + loanApprovedAmount
+				+ ", landVerificationApproval=" + landVerificationApproval + ", financeVerificationApproval="
+				+ financeVerificationApproval + ", adminApproval=" + adminApproval + ", customer=" + customer + "]";
 	}
 
 	public LoanApplicationDto() {

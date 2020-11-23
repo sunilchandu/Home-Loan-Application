@@ -1,7 +1,7 @@
 package com.example.demo.entities;
 
 import java.time.LocalDate;
-import com.example.demo.entities.Status;
+import com.example.demo.entities.StatusEntity;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -39,7 +39,7 @@ public class LoanApplication {
     private CustomerEntity customer;
 	@Enumerated(EnumType.STRING)
 	@Column(name="status")
-	private Status status;
+	private StatusEntity status;
 
 	public double getLoanAppliedAmount() {
 		return loanAppliedAmount;
@@ -84,10 +84,10 @@ public class LoanApplication {
 	
    
 
-	public void setStatus(Status status2) {
+	public void setStatus(StatusEntity status2) {
 		this.status = status2;
 	}
-	 public Status getStatus() {
+	 public StatusEntity getStatus() {
 			return status;
 		}
 
@@ -104,7 +104,7 @@ public class LoanApplication {
 
 	public LoanApplication(int id, LocalDate dateOfApplication, double loanAppliedAmount, double loanApprovedAmount,
 			String landVerificationApproval, String financeVerificationApproval, String adminApproval,
-			CustomerEntity customer) {
+			CustomerEntity customer,StatusEntity status) {
 		super();
 		this.id = id;
 		this.dateOfApplication = dateOfApplication;
@@ -113,6 +113,7 @@ public class LoanApplication {
 		this.landVerificationApproval = landVerificationApproval;
 		this.financeVerificationApproval = financeVerificationApproval;
 		this.adminApproval = adminApproval;
+		this.status=status;
 	
 		this.customer = customer;
 	}
@@ -141,12 +142,13 @@ public class LoanApplication {
         this.dateOfApplication = dateOfApplication;
     }
 
-    @Override
-    public String toString() {
-        return "LoanApplication{" +
-                "id=" + id +
-                ", customer=" + customer +
-                ", dateOfApplication=" + dateOfApplication +
-                '}';
-    }
+	@Override
+	public String toString() {
+		return "LoanApplication [id=" + id + ", dateOfApplication=" + dateOfApplication + ", loanAppliedAmount="
+				+ loanAppliedAmount + ", loanApprovedAmount=" + loanApprovedAmount + ", landVerificationApproval="
+				+ landVerificationApproval + ", financeVerificationApproval=" + financeVerificationApproval
+				+ ", adminApproval=" + adminApproval + ", customer=" + customer + "]";
+	}
+
+    
 }

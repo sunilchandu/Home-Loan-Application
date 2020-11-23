@@ -14,8 +14,8 @@ public interface ILoanApplicationService {
 	public List<LoanApplicationDto> retrieveAllLoanApplication();
 
 	public LoanApplicationDto retrieveLoanApplicationById(Integer loanApplicationId) throws ApplicationIdNotFound;
-	public List<LoanApplicationDto> deleteLoanApplication(Integer loanApplicationId) throws ApplicationIdNotFound;
+	public LoanApplicationDto deleteLoanApplication(Integer loanApplicationId) throws ApplicationIdNotFound;
 
-	public List<LoanApplicationDto> updateLoanApplication(LoanApplicationDto loanApplicationDto) throws ApplicationIdNotFound;
+	public LoanApplicationDto updateLoanApplication(LoanApplicationDto loanApplicationDto) throws ApplicationIdNotFound;
 
 }

@@ -23,24 +23,29 @@ public class LoanApplicationService implements ILoanApplicationService {
 	@Autowired
 	private LoanApplicationRepository loanApplicationRepository;
 	static Logger log = Logger.getLogger(LoanApplicationService.class.getName());
+	Convertor c = new Convertor();
 
 	public LoanApplicationDto addLoanApplication(LoanApplicationDto loanApplicationDto) throws ApplicationAlreadyExists{
 		log.info("starting of the addLoanApplication method");
-
-		LoanApplication loanApplication = ConvertDTOToEntity(loanApplicationDto);
 		
-		Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findById(ConvertDTOToEntity(loanApplicationDto).getId());
+		if(loanApplicationDto==null) {
+			return null;
+		}
+
+		LoanApplication loanApplication = c.ConvertDTOToEntity(loanApplicationDto);
+		
+		Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findById(c.ConvertDTOToEntity(loanApplicationDto).getId());
 		
 		
 		if(findloanApplicationDto.isPresent()) {
-			throw new ApplicationAlreadyExists("application already Exists");
+			throw new ApplicationAlreadyExists("ApplicationAlreadyExists");
 		}
 
 		
 		LoanApplication loanApplication1= loanApplicationRepository.save(loanApplication);
 		log.info("ending of the addLoanApplication method");
 
-		return ConvertEntityToDto(loanApplication1);
+		return c.ConvertEntityToDto(loanApplication1);
 		
 	}
 
@@ -49,48 +54,56 @@ public class LoanApplicationService implements ILoanApplicationService {
 
 		List<LoanApplicationDto> applicationDtoList = new ArrayList<LoanApplicationDto>();
 		List<LoanApplication> applicationList = loanApplicationRepository.findAll();
+		if(applicationList==null) {
+			return null;
+		}
+		
 
 		for (LoanApplication loan : applicationList) {
-			applicationDtoList.add(ConvertEntityToDto(loan));
+			applicationDtoList.add(c.ConvertEntityToDto(loan));
 		}
 		log.info("ending of the retrieve all LoanApplication method");
 
 		return applicationDtoList;
 	}
 
-	public List<LoanApplicationDto> deleteLoanApplication(Integer loanApplicationId) throws ApplicationIdNotFound {
+	public LoanApplicationDto deleteLoanApplication(Integer loanApplicationId) throws ApplicationIdNotFound {
 		log.info("starting of the deleteLoanApplication method");
 		
-Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findById(loanApplicationId);
+Optional<LoanApplication> findloanApplication=loanApplicationRepository.findById(loanApplicationId);
 		
-		if(findloanApplicationDto.isEmpty()) {
-			throw new ApplicationIdNotFound("application not found");
+		if(findloanApplication.isEmpty()) {
+			throw new ApplicationIdNotFound("ApplicationIdNotFound");
 		}
 
 		loanApplicationRepository.deleteById(loanApplicationId);
 
 		log.info("ending of the deleteLoanApplication method");
 
-		return retrieveAllLoanApplication();
+		return c.ConvertEntityToDto(findloanApplication.get());
 	}
 
-	public List<LoanApplicationDto> updateLoanApplication(LoanApplicationDto loanApplicationDto) throws ApplicationIdNotFound {
+	public LoanApplicationDto updateLoanApplication(LoanApplicationDto loanApplicationDto) throws ApplicationIdNotFound {
 		log.info("starting of the updateLoanApplication method");
 		
-Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findById(ConvertDTOToEntity(loanApplicationDto).getId());
+		
+Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findById(c.ConvertDTOToEntity(loanApplicationDto).getId());
+
+
 		
 		
 		if(findloanApplicationDto.isEmpty()) {
-			throw new ApplicationIdNotFound("application already Exists");
+			throw new ApplicationIdNotFound("ApplicationIdNotFound");
 		}
 		
 		
+		LoanApplicationDto lp= c.ConvertEntityToDto(loanApplicationRepository.save(c.ConvertDTOToEntity(loanApplicationDto)));
 
-		ConvertEntityToDto(loanApplicationRepository.save(ConvertDTOToEntity(loanApplicationDto)));
+		
 		// TODO Auto-generated method stub
 		log.info("ending of the updateLoanApplication method");
 
-		return retrieveAllLoanApplication();
+		return lp;
 	}
 
 	public LoanApplicationDto retrieveLoanApplicationById(Integer loanApplicationId) throws ApplicationIdNotFound{
@@ -99,43 +112,15 @@ Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findB
 Optional<LoanApplication> findloanApplicationDto=loanApplicationRepository.findById(loanApplicationId);
 		
 		if(findloanApplicationDto.isEmpty()) {
-			throw new ApplicationIdNotFound("application not found");
+			throw new ApplicationIdNotFound("ApplicationIdNotFound");
 		}
 
-		Optional<LoanApplication> loanApplication = loanApplicationRepository.findById(loanApplicationId);
+//		Optional<LoanApplication> loanApplication = loanApplicationRepository.findById(loanApplicationId);
 		log.info("ending of the retrieveLoanApplicationById method");
+		
+		LoanApplication lp=findloanApplicationDto.get();
 
-		return ConvertEntityToDto(loanApplication.get());
+		return c.ConvertEntityToDto(lp);
 	}
-
-	public LoanApplication ConvertDTOToEntity(LoanApplicationDto loanApplicationDto) {
-		LoanApplication loanApplication = new LoanApplication();
-		loanApplication.setId(loanApplicationDto.getApplicationId());
-		loanApplication.setAdminApproval(loanApplicationDto.getAdminApproval());
-		loanApplication.setDateOfApplication(loanApplicationDto.getApplicationDate());
-		loanApplication.setFinanceVerificationApproval(loanApplicationDto.getFinanceVerificationApproval());
-		loanApplication.setLandVerificationApproval(loanApplicationDto.getLandVerificationApproval());
-		loanApplication.setCustomer(loanApplicationDto.getCustomer());
-		loanApplication.setLoanAppliedAmount(loanApplicationDto.getLoanAppliedAmount());
-		loanApplication.setLoanApprovedAmount(loanApplicationDto.getLoanApprovedAmount());
-
-		return loanApplication;
-
-	}
-
-	public LoanApplicationDto ConvertEntityToDto(LoanApplication loanApplication) {
-		LoanApplicationDto loanApplicationDto = new LoanApplicationDto();
-		loanApplicationDto.setApplicationId(loanApplication.getId());
-		loanApplicationDto.setAdminApproval(loanApplication.getAdminApproval());
-		loanApplicationDto.setApplicationDate(loanApplication.getDateOfApplication());
-		loanApplicationDto.setFinanceVerificationApproval(loanApplication.getFinanceVerificationApproval());
-		loanApplicationDto.setLandVerificationApproval(loanApplication.getLandVerificationApproval());
-		loanApplicationDto.setCustomer(loanApplication.getCustomer());
-		loanApplicationDto.setLoanAppliedAmount(loanApplication.getLoanAppliedAmount());
-		loanApplicationDto.setLoanApprovedAmount(loanApplication.getLoanApprovedAmount());
-
-		return loanApplicationDto;
-
-	}
-
 }
+

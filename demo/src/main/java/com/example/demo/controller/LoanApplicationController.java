@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.service.ILoanApplicationService;
+import javax.validation.Valid;
 import com.example.demo.dto.LoanApplicationDto;
 import com.example.demo.entities.LoanApplication;
 import com.example.demo.exception.ApplicationAlreadyExists;
@@ -50,34 +51,34 @@ public class LoanApplicationController {
 	}
    
    @PostMapping
-   public LoanApplicationDto addLoanApplication(@RequestBody LoanApplicationDto loanApplicationDto) throws ApplicationAlreadyExists{
+   public LoanApplicationDto addLoanApplication(@Valid @RequestBody LoanApplicationDto loanApplicationDto) throws ApplicationAlreadyExists{
      
        return service.addLoanApplication(loanApplicationDto);
    }
    
    @PutMapping
-	public ResponseEntity<List<LoanApplicationDto>> updateLoanApplication(
+	public ResponseEntity<LoanApplicationDto> updateLoanApplication(
 			@RequestBody LoanApplicationDto loanApplicationDto) throws ApplicationIdNotFound{
-		List<LoanApplicationDto> loanApplications= service.updateLoanApplication(loanApplicationDto);
-		if(loanApplications.isEmpty())
+		LoanApplicationDto loanApplications= service.updateLoanApplication(loanApplicationDto);
+		if(loanApplications==null)
 		{
 			return new ResponseEntity("Sorry! Products not available!", 
 					HttpStatus.NOT_FOUND);
 		}
 		
-		return new ResponseEntity<List<LoanApplicationDto>>(loanApplications, HttpStatus.OK);
+		return new ResponseEntity<LoanApplicationDto>(loanApplications, HttpStatus.OK);
 	}
    
    @DeleteMapping("{loan-application-id}")
-	public ResponseEntity<List<LoanApplicationDto>> deleteLoanApplication(
+	public ResponseEntity<LoanApplicationDto> deleteLoanApplication(
 			@PathVariable("loan-application-id")Integer loanApplicationId) throws ApplicationIdNotFound {
-		List<LoanApplicationDto> loanApplications= service.deleteLoanApplication(loanApplicationId);
-		if(loanApplications.isEmpty() || loanApplications==null) {
+		LoanApplicationDto loanApplications= service.deleteLoanApplication(loanApplicationId);
+		if( loanApplications==null) {
 			return new ResponseEntity("Sorry! ProductsId not available!", 
 					HttpStatus.NOT_FOUND);
 		}
 		
-		return new ResponseEntity<List<LoanApplicationDto>>(loanApplications, HttpStatus.OK);
+		return new ResponseEntity<LoanApplicationDto>(loanApplications, HttpStatus.OK);
 	}
    
 
